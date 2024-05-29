@@ -1,9 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="API program, in JS"
+    />
+    <meta name="keywords" content="mths, ICD2O" />
+    <meta name="author" content="Hai Tran" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.light_blue-green.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>My first API program, in JS</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title"
+            >My first API program, in JS</span
+          >
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <p>Click the button to show the current temperature of Ottawa</p>
+        <br />
+        <br />
+        <form action="#" method="get" id="form_API">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showCurrentTemperature()" type="button">
+            show temperature
+          </button>
+        </form>
+        <br />
+        <br />
+        <div class="page-content-answer">
+          <div id="result"></div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
